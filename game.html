@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <script src="game.js"></script>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+    <div class="title">
+        <h1>ROCK PAPER SCISSORS</h1>
+        <h3>Let's see who is gonna win</h3>
+        <h4>Player vs computer</h4>
+    </div>
+
+<button class="rockButton" onclick=" 
+    pickComputerMove();
+    playerGame('Rock');
+   ">
+   <img src="rock.png" class="rockImage">
+</button>
+
+<button class="paperButton" onclick="
+    pickComputerMove();
+    playerGame('Paper');
+   ">
+    <img src="paper1.png" class="paperImage">
+</button>
+
+<button class="scissorsButton" onclick="
+    pickComputerMove();
+    playerGame('Scissors');
+   ">
+    <img src="scissors.png" class="scissorsImage">
+</button>
+<p class="result"></p>
+<p class="moves"></p>
+<p class="Scores"></p>
+
+<button class="resetScore" onclick="resetScore()">
+    Reset Score
+</button>
+    
+
+
+</body>
+</html>
